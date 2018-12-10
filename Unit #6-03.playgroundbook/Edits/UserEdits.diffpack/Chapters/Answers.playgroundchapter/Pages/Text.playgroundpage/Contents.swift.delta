@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created on: 10-Dec-2018
+// Created by: Natalie Beshara
+// Created for: ICS3U
+// This program prints out the layout for your mailing ad
+import Foundation
+
+struct MailingAddress {
+    var firstName : String
+    var lastName : String
+    var address : String
+    var city : String
+    var province : String
+    var postalCode : String
+}
+
+let firstN = ask("Enter your first name")
+let lastN = ask("Enter your last name")
+let mailingAddress = ask("Enter you full address")
+let aCity = ask("Enter your city")
+let aProvince = ask("Enter your province")
+let aPostalCode = ask("Enter your postal code")
+
+let postalAddress = MailingAddress(firstName: firstN, lastName: lastN, address: mailingAddress, city: aCity, province: aProvince, postalCode: aPostalCode)
+
+show("")
+show("Your printed address:")
+show("\(postalAddress.firstName) \(postalAddress.lastName)")
+show("\(postalAddress.address)")
+show("\(postalAddress.city) \(postalAddress.province) \(postalAddress.postalCode)")
+
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 974}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
